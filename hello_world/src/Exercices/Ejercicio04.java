@@ -23,7 +23,7 @@ public class Ejercicio04 {
         
         System.out.print("Ingrese los grados Celsius a convertir");
         System.out.println(" a Fahrenheit:");
-        double C = leer.nextFloat();
+        double C = leer.nextDouble();
         
         System.out.print("Los grados ingresados son " +C);  
         System.out.println("° celsius");
@@ -35,3 +35,4 @@ public class Ejercicio04 {
     }
     
 }
+git 
