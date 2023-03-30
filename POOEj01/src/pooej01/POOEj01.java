@@ -5,6 +5,8 @@
  */
 package pooej01;
 
+import Entidad.Persona;
+
 /**
  *
  * @author Diego
@@ -15,7 +17,12 @@ public class POOEj01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //Instanciación (creación) utilizando el constructor por defecto.
+        Persona primeraPersona = new Persona();
+        //Instanciación utilizando el constructor por parámetros.
+        Persona segundaPersona = new Persona("Mariano");
+     
     }
     
 }
