@@ -19,7 +19,7 @@ public class Persona {
     public int Altura;
     public String Documento;
 
-    
+ 
 // constructores
     //[<modificador>] <nombre de clase> ( <argumento>* ) {
     //   <sentencia>*
@@ -81,5 +81,9 @@ public class Persona {
         this.Documento = Documento;
     }
 
+    
+    public void llenarPersona(){
+        
+    }
     
 }
