@@ -6,7 +6,11 @@
 package pooej01;
 
 import Entidad.Persona;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+>>>>>>> cb39bf6d3dacf09f6aa4b07bc2e68816ff5d1828
 /**
  *
  * @author Diego
@@ -18,6 +22,7 @@ public class POOEj01 {
      */
     public static void main(String[] args) {
         
+<<<<<<< HEAD
         //Instanciación (creación) utilizando el constructor vacío
         Persona primeraPersona = new Persona();
         //Instanciación usando el constructor por parámetro
@@ -48,6 +53,13 @@ public class POOEj01 {
         
         segundaPersona.llenarPersona(nombre2, edad2, sexo2);
         segundaPersona.mostrarPersona();
+=======
+        //Instanciación (creación) utilizando el constructor por defecto.
+        Persona primeraPersona = new Persona();
+        //Instanciación utilizando el constructor por parámetros.
+        Persona segundaPersona = new Persona("Mariano");
+     
+>>>>>>> cb39bf6d3dacf09f6aa4b07bc2e68816ff5d1828
     }
     
 }

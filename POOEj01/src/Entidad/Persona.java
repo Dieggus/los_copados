@@ -14,6 +14,7 @@ package Entidad;
  */
 public class Persona { //los nombres de las clases siempre comienzan con mayúscula; si son compuestos cada palabra debe comenzar igual
     
+<<<<<<< HEAD
 // atributos
     //<modificador>* <tipo> <nombre> // * por ahora solo modificadores de visibilidad: public, protected, private.
     public String nombre;
@@ -84,4 +85,77 @@ public class Persona { //los nombres de las clases siempre comienzan con mayúsc
        System.out.println("La edad de la persona es: "+edad+" años");
        System.out.println("El sexo de la persona es: "+sexo);
    }
+=======
+         
+// atributos
+//<modificador>* <tipo> <nombre>
+    public int Edad;
+    public String Nombre;
+    public int Altura;
+    public String Documento;
+
+    
+// constructores
+    //[<modificador>] <nombre de clase> ( <argumento>* ) {
+    //   <sentencia>*
+    //}
+
+    public Persona() {
+    }
+    
+    public Persona(String Nombre){
+        this.Nombre = Nombre;
+    }
+
+    public Persona(int Edad, String Nombre, int Altura, String Documento) {
+        this.Edad = Edad;
+        this.Nombre = Nombre;
+        this.Altura = Altura;
+        this.Documento = Documento;
+        
+    }
+
+    
+    //Métodos propios
+    /*<modificador>* <tipo de retorno> <nombre> ( <argumento>>* ) {
+	<sentencias>*
+    return valorRetorno;       	
+    }
+    */
+    
+    //Método get: Se utilizan para consultar el estado de un objeto
+    public int getEdad() {
+        return Edad;
+    }
+    //Método set: Se utilizan para modificar las caracteristicas de un objeto
+    public void setEdad(int Edad) {
+        this.Edad = Edad;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public int getAltura() {
+        return Altura;
+    }
+
+    public void setAltura(int Altura) {
+        this.Altura = Altura;
+    }
+
+    public String getDocumento() {
+        return Documento;
+    }
+
+    public void setDocumento(String Documento) {
+        this.Documento = Documento;
+    }
+
+    
+>>>>>>> cb39bf6d3dacf09f6aa4b07bc2e68816ff5d1828
 }
