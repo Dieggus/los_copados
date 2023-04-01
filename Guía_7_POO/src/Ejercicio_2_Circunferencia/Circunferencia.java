@@ -10,29 +10,45 @@ Método perimetro(): para calcular el perímetro (Perimetro=2*π*radio).
  */
 package Ejercicio_2_Circunferencia;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Diego
  */
 public class Circunferencia {
 
-    private float Radio;
-
-    public float getRadio() {
-        return Radio;
-    }
-
-    public void setRadio(float Radio) {
-        this.Radio = Radio;
-    }
-
-    public Circunferencia(float Radio) {
-        this.Radio = Radio;
+     private double radio;
+    
+    // Constructor que inicializa el radio pasado como parámetro
+    public Circunferencia(double radio) {
+        this.radio = radio;
     }
     
-    public void crearCircunferencia(float Radio) {
-         this.Radio = Radio;
+    // Métodos get y set para el atributo radio de la clase Circunferencia
+    public double getRadio() {
+        return radio;
     }
     
-
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+    
+    // Método para crear una Circunferencia
+    public static Circunferencia crearCircunferencia() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce el radio de la circunferencia: ");
+        double radio = scanner.nextDouble();
+        return new Circunferencia(radio);
+    }
+    
+    // Método para calcular el área de la circunferencia
+    public double area() {
+        return Math.PI * radio * radio;
+    }
+    
+    // Método para calcular el perímetro de la circunferencia
+    public double perimetro() {
+        return 2 * Math.PI * radio;
+    }
 }
