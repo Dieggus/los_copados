@@ -62,17 +62,17 @@ public class Rectángulo {
     }
 
     public int perimetro() {
-        return (base * high) * 2;
+        return (2*base)+(2*high);
     }
     
     
     public void crearRectanguloAsteriscos(){
         
-         for (int i = 1; i <= this.base; i++) {
-            for (int j = 1; j <= this.high; j++) {
-                if (i == 1 || i == this.base) {
+         for (int i = 1; i <= this.high; i++) {
+            for (int j = 1; j <= this.base; j++) {
+                if (i == 1 || i == this.high) {
                     System.out.print("* ");
-                } else if (j == 1 || j == this.high){
+                } else if (j == 1 || j == this.base){
                     System.out.print("* ");
                 } else {
                     System.out.print("  ");
@@ -80,6 +80,11 @@ public class Rectángulo {
             }
             System.out.println("");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Rect\u00e1ngulo{" + "base=" + base + ", high=" + high + '}';
     }
     
 }
